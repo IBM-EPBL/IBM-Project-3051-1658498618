@@ -43,7 +43,7 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cms");
   delay(2000);
-  if(distance>100){
+  if(distance<100){
     PublishData(distance);
   }
 }
